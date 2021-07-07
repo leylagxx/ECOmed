@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ECO Med</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=STIX+Two+Math&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick-theme.css" rel="stylesheet"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="menu">
+                <div class="menu__logo">
+                    <h1>ECO Med</h1>
+                </div>
+                <div class="menu__items">
+                    <input class="check" type="checkbox" name="" id="hambruger">
+                     <label for="hambruger">
+                         <div class="hambruger">
+                             <span></span>
+                             <span></span>
+                             <span></span>   
+                             
+                             
+                         </div>
+                     </label> 
+                     <ul class="navigation">
+                         <li class="navigation__item">О нас<a href=""></a></li>
+                         <li class="navigation__item">Приминение<a href=""></a></li>
+                         <li class="navigation__item">Оборудование<a href=""></a></li>
+                         <li class="navigation__item">Вопросы<a href=""></a></li>
+                         <li id="myBtn1" class="navigation__item">Памятка потребителя<a href=""></a></li>
+                         <li class="navigation__item navigation__item_blue">Оставить заявку<a href=""></a></a></li>
+                     </ul> 
+                </div>
+            </nav> 
+            
+        </div>
+    </header>
+    <section class="sec1 mb6">
+        <div class="sec1__row">
+            <h1 class="sec1__h1">Дышите свежим воздухом</h1>
+            <p class="sec1__p">Дезинфекционные растворы для помещений
+            любого назначения и ценового диапазона.
+            Убедитесь, что ваши помещения чисты и
+            безопасны с помощью Desinfect Med Eco</p>
+            <button class="sec1__btn"> <a href=""> Заказать услугу</a></button>
+            <br>
+            <button id="myBtn">Открыть окно</button>
+            <div id="myModal" class="modal">             
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <span class="close cls">&times;</span>
+                        <h1>Памятка потребителя</h1>
+                    </div>
+                    <div class="modal-body">
+                        <p>Прежде чем воспользоваться услугами какой-либо дезинфицирующей компании
+                        обязательно убедитесь в наличии всех документов и сертификатов на
+                        дезинфицирующее средство и используемое оборудование, предлагаемое этой
+                        компанией, а именно – сертификаты соответствия и безопасности, технический
+                        паспорт, лабораторные испытания, СГР (Свидетельство государственной регистрации)
+                        и действительность расположения в государственном реестре.
+                        </p>
+                        <p> <span class="red">ВНИМАНИЕ:</span> Не редкораствор обычного хлора, или несертифицированного химического средства, что ещё
+                        опаснее. Такие растворы не дезинфицируют помещение, но могут нанести вред Вашему
+                        здоровью.</p>
+                        <p>Не редко, недобросовестные дезинфекторы используют в целях экономии
+                        раствор обычного хлора, или несертифицированного химического средства, что ещё
+                        опаснее. Такие растворы не дезинфицируют помещение, но могут нанести вред Вашему
+                        здоровью.</p>
+                        <span class="cls1 close__btn ">Закрыть</span>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="sec mb6">
+        <h1 class="sec__h1">БУДУЩЕЕ ДЕЗИНФЕКЦИИ УЖЕ
+            НАСТУПИЛО</h1>
+        <div class="row">
+            <div class="row__sec2Item1">
+                <p><span class="blue">ТОО «DISINFECT MED ECO»</span> <br>  <br>Первый и единственный эксклюзивный представитель
+                    компании «Disinfect Med by Technology System»(Италия)
+                    на территории Российской Федерации и Республики
+                    Казахстан.
+                    
+                    Компания «Disinfect Med by Technology System»
+                    производит дезинфицирующее и дезодорирующее
+                    оборудование (фрагментатор молекулярный), а так же
+                    средства к ним.</p>
+                
+            </div>
+            <div class="row__sec2Item2">
+                <img src="data:image/png;base64,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" alt="">
+            </div>
+        </div>
+        
+    </section>
+    <!-- <section class="sec">
+        <h1 class="sec__h1">ДЕКЛАРАЦИЯ СООТВЕТСТВИЯ И
+
+            ТЕХНИЧЕСКАЯ СПЕЦИФИКАЦИЯ</h1>
+            
+    </section>
+    <section class="sec">
+        <h1 class="sec__h1">ПАСПОРТ БЕЗОПАСНОСТИ</h1>
+    </section> -->
+    <section class="sec5 mb6">
+        <h1 class="sec5__h1">ЭКОЛОГИЧЕСКАЯ ДИЗЕНФЕКЦИЯ</h1>
+        <h3 class="sec5__h3">Новое решение от микробиологического 
+
+            загрязнение внутреней среды </h3>
+        <div class="row">
+            <div class="row__sec5Item1">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrdfc5hwSxA0DpB0JhkqMXJ8sN3mlKP5-C_w&usqp=CAU" alt="">
+            </div>
+            <div class="row__sec5Item2">
+                <h1 class="">БЕЗОПАСНАЯ,
+
+                    БЫСТРАЯ И ПОЛНАЯ
+                    
+                    ДЕЗИНФЕКЦИЯ</h1>
+                    <hr>
+                    <h1>ПРОДУКТЫ DISINFECT MED
+
+                        ИДЕАЛЬНО ПОДХОДЯТ ДЛЯ
+                        
+                        СТЕРИЛИЗАЦИИ В ЛЮБОМ
+                        
+                        ПОМЕЩЕНИИ</h1>
+            </div>
+
+        </div>
+    </section>
+<script src="script.js"></script>
+</body>
+</html>
