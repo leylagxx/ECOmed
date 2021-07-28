@@ -1186,7 +1186,7 @@ width: 83%;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-            margin-top: 15px;
+            margin-top: 40px;
   }
 .rowSec6{
   margin: 0;
@@ -1227,6 +1227,9 @@ width: 83%;
   .sec__h1, .sec7Items{
     margin: 0 auto;
 
+  }
+  .footer__items{
+    width: 89%;
   }
   .mybtn {
     
