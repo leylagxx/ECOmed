@@ -1229,7 +1229,9 @@ width: 83%;
 
   }
   .footer__items{
-    width: 89%;
+    width: 79%;
+    
+    align-items: flex-start;
   }
   .mybtn {
     
